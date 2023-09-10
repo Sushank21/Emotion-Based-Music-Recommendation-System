@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.MainActivity"
+        >
+
+        <TextView
+            android:id="@+id/textViewFeatured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Featured Playlist"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feaRecy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFeatured" />
+
+        <TextView
+            android:id="@+id/textViewNewReleases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Releases"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feaRecy"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nrRecy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNewReleases"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Party"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nrRecy"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cpRecy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategory"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="5dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        app:icon="@drawable/ic_search_camera"
+        android:textSize="15sp"
+        android:text="Search Songs with facial emotion"
+        />
+    </LinearLayout>

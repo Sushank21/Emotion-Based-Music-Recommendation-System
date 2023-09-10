@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/development/MySpotify/app/src/main/res/drawable/recy_border.xml" value="0.131" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/activity_emotion_model.xml" value="0.20729166666666668" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/activity_home_screen.xml" value="0.20729166666666668" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/activity_main.xml" value="0.2078804347826087" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/activity_rcommended_playlist.xml" value="0.20729166666666668" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/activity_recommended_playlist.xml" value="0.20729166666666668" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/activity_trends_items.xml" value="0.264" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/featured_list_item.xml" value="0.2" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/playlist_items.xml" value="0.2" />
+        <entry key="..\:/development/MySpotify/app/src/main/res/layout/wow.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
